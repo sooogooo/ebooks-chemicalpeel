@@ -1,0 +1,121 @@
+site_name: 刷酸医美：刷出好气色
+site_description: 从小白到专家的肌肤焕新指南 - 科学刷酸，安全变美，重塑肌肤新生态
+site_author: 护肤科普团队
+
+copyright: |
+  Copyright &copy; 2025 《刷酸医美：刷出好气色》编写团队<br>
+  sooogooo | 
+  <a href="https://www.cqlghospital.com" target="_blank">重庆联合丽格第五医疗美容医院</a><br>
+  <a href="https://beian.miit.gov.cn" target="_blank">ICP备案：渝ICP备15004871号</a> | 
+  <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50010302505442" target="_blank">公安备案：渝公网安备50010302505442号</a>
+
+theme:
+  name: material
+  language: zh
+  logo: images/branding/logo.png
+  favicon: images/branding/favicon.png
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Noto Sans SC
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.copy
+
+plugins:
+  - search:
+      lang: zh
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - meta
+  - tables
+  - toc:
+      permalink: true
+      title: 目录
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - 首页: index.md
+  - 前言:
+    - 前言: preface.md
+    - 序言: introduction.md
+  - 基础篇:
+    - 第1章 认识你的肌肤: chapters/01_know_your_skin.md
+    - 第2章 刷酸科学原理: chapters/02_acid_science.md
+    - 第3章 酸类成分大百科: chapters/03_acid_encyclopedia.md
+    - 第4章 刷酸前的准备工作: chapters/04_preparation.md
+  - 实践篇:
+    - 第5章 新手刷酸入门指南: chapters/05_beginner_guide.md
+    - 第6章 不同肌肤问题的刷酸方案: chapters/06_targeted_solutions.md
+    - 第7章 刷酸产品选择与搭配: chapters/07_product_selection.md
+    - 第8章 刷酸过程中的护理要点: chapters/08_care_during_process.md
+  - 进阶篇:
+    - 第9章 医美级刷酸项目: chapters/09_medical_grade_peels.md
+    - 第10章 刷酸安全与风险防控: chapters/10_safety_risk_control.md
+    - 第11章 刷酸效果评估与调整: chapters/11_evaluation_adjustment.md
+  - 生活方式篇:
+    - 第12章 刷酸期间的生活管理: chapters/12_lifestyle_management.md
+    - 第13章 刷酸与美妆的平衡: chapters/13_makeup_balance.md
+    - 第14章 刷酸社群与心得分享: chapters/14_community_sharing.md
+  - 附录:
+    - 附录A 刷酸产品推荐清单: appendix/product_recommendations.md
+    - 附录B 刷酸常见问题FAQ: appendix/faq.md
+    - 附录C 刷酸日记模板: appendix/diary_template.md
+    - 附录D 专业术语解释: appendix/glossary.md
+  - 后记: epilogue.md
+  - 关于:
+    - 图表索引: about/charts.md
+    - 参考资料: about/references.md
+    - 版权声明: about/copyright.md
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - javascripts/reading-progress.js
+  - javascripts/image-zoom.js

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="1000" height="400">
+  <defs>
+    <style>
+      .title-text { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #2C3E50; }
+      .type-title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #FEFEFE; }
+      .feature-text { font-family: Arial, sans-serif; font-size: 11px; fill: #2C3E50; }
+      .oil-level { fill: #F39C12; }
+      .water-level { fill: #3498DB; }
+      .sensitivity-level { fill: #E74C3C; }
+      .pore-size { fill: #7F8C8D; }
+      .oily-skin { fill: #F39C12; stroke: #E67E22; stroke-width: 2; }
+      .dry-skin { fill: #3498DB; stroke: #2980B9; stroke-width: 2; }
+      .combination-skin { fill: #27AE60; stroke: #229954; stroke-width: 2; }
+      .sensitive-skin { fill: #E74C3C; stroke: #C0392B; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1000" height="400" fill="#FEFEFE"/>
+  
+  <!-- 标题 -->
+  <text x="500" y="30" text-anchor="middle" class="title-text">四大肌肤类型特征对比</text>
+  <text x="500" y="50" text-anchor="middle" class="feature-text">Four Main Skin Types Comparison</text>
+  
+  <!-- 油性肌肤 -->
+  <g id="oily-skin-type">
+    <rect x="50" y="80" width="200" height="280" rx="15" class="oily-skin"/>
+    <text x="150" y="105" text-anchor="middle" class="type-title">油性肌肤</text>
+    <text x="150" y="125" text-anchor="middle" class="type-title">Oily Skin</text>
+    
+    <!-- 特征指标 -->
+    <g id="oily-indicators">
+      <!-- 出油程度 -->
+      <text x="60" y="150" class="feature-text" font-weight="bold">出油程度:</text>
+      <rect x="60" y="155" width="120" height="8" fill="#E8E8E8" rx="4"/>
+      <rect x="60" y="155" width="100" height="8" class="oil-level" rx="4"/>
+      <text x="185" y="162" class="feature-text">高</text>
+      
+      <!-- 水分含量 -->
+      <text x="60" y="180" class="feature-text" font-weight="bold">水分含量:</text>
+      <rect x="60" y="185" width="120" height="8" fill="#E8E8E8" rx="4"/>
+      <rect x="60" y="185" width="80" height="8" class="water-level" rx="4"/>
+      <text x="185" y="192" class="feature-text">中</text>
+      
+      <!-- 毛孔大小 -->
+      <text x="60" y="210" class="feature-text" font-weight="bold">毛孔大小:</text>
+      <rect x="60" y="215" width="120" height="8" fill="#E8E8E8" rx="4"/>
+      <rect x="60" y="215" width="90" height="8" class="pore-size" rx="4"/>
+      <text x="185" y="222" class="feature-text">大</text>
+      
+      <!-- 敏感程度 -->
+      <text x="60" y="240" class="feature-text" font-weight="bold">敏感程度:</text>
+      <rect x="60" y="245" width="120" height="8" fill="#E8E8E8" rx="4"/>
+      <rect x="60" y="245" width="40" height="8" class="sensitivity-level" rx="4"/>
+      <text x="185" y="252" class="feature-text">低</text>
+    </g>
+    
+    <!-- 主要特征 -->
+    <text x="60" y="275" class="feature-text" font-weight="bold">主要特征:</text>
+    <text x="60" y="290" class="feature-text">• T区油光明显</text>
+    <text x="60" y="305" class="feature-text">• 毛孔粗大可见</text>
+    <text x="60" y="320" class="feature-text">• 易长痘痘粉刺</text>
+    <text x="60" y="335" class="feature-text">• 妆容易脱落</text>
+    <text x="60" y="350" class="feature-text">• 耐受性较强</text>
+  </g>
+  
+  <!-- 干性肌肤 -->
+  <g id="dry-skin-type">
+    <rect x="270" y="80" width="200" height="280" rx="15" class="dry-skin"/>
+    <text x="370" y="105" text-anchor="middle" class="type-title">干性肌肤</text>
+    <text x="370" y="125" text-anchor="middle" class="type-title">Dry Skin</text>
+    
+    <!-- 特征指标 -->
+    <g id="dry-indicators">
+      <!-- 出油程度 -->
+      <text x="280" y="150" class="feature-text" font-weight="bold">出油程度:</text>
+      <rect x="280" y="155" width="120" height="8" fill="#E8E8E8" rx="4"/>
+      <rect x="280" y="155" width="30" height="8" class="oil-level" rx="4"/>
+      <text x="405" y="162" class="feature-text">低</text>
+      
+      <!-- 水分含量 -->
+      <text x="280" y="180" class="feature-text" font-weight="bold">水分含量:</text>
+      <rect x="280" y="185" width="120" height="8" fill="#E8E8E8" rx="4"/>
+      <rect x="280" y="185" width="40" height="8" class="water-level" rx="4"/>
+      <text x="405" y="192" class="feature-text">低</text>
+      
+      <!-- 毛孔大小 -->
+      <text x="280" y="210" class="feature-text" font-weight="bold">毛孔大小:</text>
+      <rect x="280" y="215" width="120" height="8" fill="#E8E8E8" rx="4"/>
+      <rect x="280" y="215" width="35" height="8" class="pore-size" rx="4"/>
+      <text x="405" y="222" class="feature-text">小</text>
+      
+      <!-- 敏感程度 -->
+      <text x="280" y="240" class="feature-text" font-weight="bold">敏感程度:</text>
+      <rect x="280" y="245" width="120" height="8" fill="#E8E8E8" rx="4"/>
+      <rect x="280" y="245" width="70" height="8" class="sensitivity-level" rx="4"/>
+      <text x="405" y="252" class="feature-text">中</text>
+    </g>
+    
+    <!-- 主要特征 -->
+    <text x="280" y="275" class="feature-text" font-weight="bold">主要特征:</text>
+    <text x="280" y="290" class="feature-text">• 肌肤紧绷干燥</text>
+    <text x="280" y="305" class="feature-text">• 毛孔细小不明显</text>
+    <text x="280" y="320" class="feature-text">• 易出现细纹</text>
+    <text x="280" y="335" class="feature-text">• 缺乏光泽</text>
+    <text x="280" y="350" class="feature-text">• 易脱皮起屑</text>
+  </g>
+  
+  <!-- 混合性肌肤 -->
+  <g id="combination-skin-type">
+    <rect x="490" y="80" width="200" height="280" rx="15" class="combination-skin"/>
+    <text x="590" y="105" text-anchor="middle" class="type-title">混合性肌肤</text>
+    <text x="590" y="125" text-anchor="middle" class="type-title">Combination Skin</text>
+    
+    <!-- 特征指标 -->
+    <g id="combination-indicators">
+      <!-- 出油程度 -->
+      <text x="500" y="150" class="feature-text" font-weight="bold">出油程度:</text>
+      <rect x="500" y="155" width="120" height="8" fill="#E8E8E8" rx="4"/>
+      <rect x="500" y="155" width="70" height="8" class="oil-level" rx="4"/>
+      <text x="625" y="162" class="feature-text">中</text>
+      
+      <!-- 水分含量 -->
+      <text x="500" y="180" class="feature-text" font-weight="bold">水分含量:</text>
+      <rect x="500" y="185" width="120" height="8" fill="#E8E8E8" rx="4"/>
+      <rect x="500" y="185" width="60" height="8" class="water-level" rx="4"/>
+      <text x="625" y="192" class="feature-text">中</text>
+      
+      <!-- 毛孔大小 -->
+      <text x="500" y="210" class="feature-text" font-weight="bold">毛孔大小:</text>
+      <rect x="500" y="215" width="120" height="8" fill="#E8E8E8" rx="4"/>
+      <rect x="500" y="215" width="65" height="8" class="pore-size" rx="4"/>
+      <text x="625" y="222" class="feature-text">中</text>
+      
+      <!-- 敏感程度 -->
+      <text x="500" y="240" class="feature-text" font-weight="bold">敏感程度:</text>
+      <rect x="500" y="245" width="120" height="8" fill="#E8E8E8" rx="4"/>
+      <rect x="500" y="245" width="50" height="8" class="sensitivity-level" rx="4"/>
+      <text x="625" y="252" class="feature-text">低</text>
+    </g>
+    
+    <!-- 主要特征 -->
+    <text x="500" y="275" class="feature-text" font-weight="bold">主要特征:</text>
+    <text x="500" y="290" class="feature-text">• T区偏油性</text>
+    <text x="500" y="305" class="feature-text">• 两颊偏干性</text>
+    <text x="500" y="320" class="feature-text">• 需分区护理</text>
+    <text x="500" y="335" class="feature-text">• 最常见类型</text>
+    <text x="500" y="350" class="feature-text">• 护理较复杂</text>
+  </g>
+  
+  <!-- 敏感性肌肤 -->
+  <g id="sensitive-skin-type">
+    <rect x="710" y="80" width="200" height="280" rx="15" class="sensitive-skin"/>
+    <text x="810" y="105" text-anchor="middle" class="type-title">敏感性肌肤</text>
+    <text x="810" y="125" text-anchor="middle" class="type-title">Sensitive Skin</text>
+    
+    <!-- 特征指标 -->
+    <g id="sensitive-indicators">
+      <!-- 出油程度 -->
+      <text x="720" y="150" class="feature-text" font-weight="bold">出油程度:</text>
+      <rect x="720" y="155" width="120" height="8" fill="#E8E8E8" rx="4"/>
+      <rect x="720" y="155" width="50" height="8" class="oil-level" rx="4"/>
+      <text x="845" y="162" class="feature-text">变化</text>
+      
+      <!-- 水分含量 -->
+      <text x="720" y="180" class="feature-text" font-weight="bold">水分含量:</text>
+      <rect x="720" y="185" width="120" height="8" fill="#E8E8E8" rx="4"/>
+      <rect x="720" y="185" width="45" height="8" class="water-level" rx="4"/>
+      <text x="845" y="192" class="feature-text">不稳定</text>
+      
+      <!-- 毛孔大小 -->
+      <text x="720" y="210" class="feature-text" font-weight="bold">毛孔大小:</text>
+      <rect x="720" y="215" width="120" height="8" fill="#E8E8E8" rx="4"/>
+      <rect x="720" y="215" width="55" height="8" class="pore-size" rx="4"/>
+      <text x="845" y="222" class="feature-text">变化</text>
+      
+      <!-- 敏感程度 -->
+      <text x="720" y="240" class="feature-text" font-weight="bold">敏感程度:</text>
+      <rect x="720" y="245" width="120" height="8" fill="#E8E8E8" rx="4"/>
+      <rect x="720" y="245" width="110" height="8" class="sensitivity-level" rx="4"/>
+      <text x="845" y="252" class="feature-text">高</text>
+    </g>
+    
+    <!-- 主要特征 -->
+    <text x="720" y="275" class="feature-text" font-weight="bold">主要特征:</text>
+    <text x="720" y="290" class="feature-text">• 易红肿刺痛</text>
+    <text x="720" y="305" class="feature-text">• 屏障功能弱</text>
+    <text x="720" y="320" class="feature-text">• 对刺激敏感</text>
+    <text x="720" y="335" class="feature-text">• 需温和护理</text>
+    <text x="720" y="350" class="feature-text">• 慎用酸类</text>
+  </g>
+  
+  <!-- 刷酸建议 -->
+  <rect x="50" y="370" width="900" height="25" rx="5" fill="#E8F5E5" stroke="#7FB069" stroke-width="1"/>
+  <text x="60" y="385" class="feature-text" font-weight="bold">刷酸建议：</text>
+  <text x="140" y="385" class="feature-text">油性→水杨酸优先 | 干性→乳酸温和 | 混合性→分区使用 | 敏感性→建立耐受后谨慎尝试</text>
+</svg>

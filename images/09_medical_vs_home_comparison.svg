@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <defs>
+    <style>
+      .title-text { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #2C3E50; }
+      .category-title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #FEFEFE; }
+      .item-title { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #2C3E50; }
+      .item-text { font-family: Arial, sans-serif; font-size: 12px; fill: #2C3E50; }
+      .pro-text { font-family: Arial, sans-serif; font-size: 11px; fill: #27AE60; }
+      .con-text { font-family: Arial, sans-serif; font-size: 11px; fill: #E74C3C; }
+      .home-use { fill: #7FB069; stroke: #5A8A4A; stroke-width: 2; }
+      .medical-grade { fill: #3498DB; stroke: #2980B9; stroke-width: 2; }
+      .comparison-bg { fill: #F8F9FA; stroke: #E8E8E8; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="700" fill="#FEFEFE"/>
+  
+  <!-- 标题 -->
+  <text x="600" y="30" text-anchor="middle" class="title-text">医美级 vs 家用刷酸全方位对比</text>
+  <text x="600" y="50" text-anchor="middle" class="item-text">Medical Grade vs Home Use Acid Treatment Comparison</text>
+  
+  <!-- 左侧：家用刷酸 -->
+  <g id="home-use-section">
+    <rect x="50" y="80" width="500" height="550" rx="15" class="home-use"/>
+    <text x="300" y="110" text-anchor="middle" class="category-title">家用刷酸 Home Use</text>
+    
+    <!-- 浓度对比 -->
+    <g id="home-concentration">
+      <rect x="70" y="130" width="460" height="60" rx="8" class="comparison-bg"/>
+      <text x="80" y="150" class="item-title">浓度范围 Concentration</text>
+      <text x="80" y="165" class="item-text">• 果酸 (AHA): 5-20%</text>
+      <text x="80" y="178" class="item-text">• 水杨酸 (BHA): 0.5-2%</text>
+      <text x="280" y="165" class="item-text">• 维A醇: 0.25-1%</text>
+      <text x="280" y="178" class="item-text">• 杏仁酸: 5-25%</text>
+    </g>
+    
+    <!-- 效果速度 -->
+    <g id="home-effect-speed">
+      <rect x="70" y="200" width="460" height="50" rx="8" class="comparison-bg"/>
+      <text x="80" y="220" class="item-title">效果速度 Effect Speed</text>
+      <text x="80" y="235" class="item-text">渐进式改善，需要4-12周看到明显效果</text>
+      <text x="80" y="248" class="item-text">温和持续，适合长期维护</text>
+    </g>
+    
+    <!-- 安全性 -->
+    <g id="home-safety">
+      <rect x="70" y="260" width="460" height="50" rx="8" class="comparison-bg"/>
+      <text x="80" y="280" class="item-title">安全性 Safety</text>
+      <text x="80" y="295" class="pro-text">✅ 相对安全，副作用较轻</text>
+      <text x="280" y="295" class="pro-text">✅ 可自行控制使用频率</text>
+      <text x="80" y="308" class="con-text">❌ 需要学习正确使用方法</text>
+    </g>
+    
+    <!-- 费用成本 -->
+    <g id="home-cost">
+      <rect x="70" y="320" width="460" height="50" rx="8" class="comparison-bg"/>
+      <text x="80" y="340" class="item-title">费用成本 Cost</text>
+      <text x="80" y="355" class="item-text">单次成本: ¥50-500 (产品价格)</text>
+      <text x="80" y="368" class="item-text">年度成本: ¥200-2000 (根据产品档次)</text>
+    </g>
+    
+    <!-- 便利性 -->
+    <g id="home-convenience">
+      <rect x="70" y="380" width="460" height="50" rx="8" class="comparison-bg"/>
+      <text x="80" y="400" class="item-title">便利性 Convenience</text>
+      <text x="80" y="415" class="pro-text">✅ 在家使用，时间灵活</text>
+      <text x="280" y="415" class="pro-text">✅ 无需预约排队</text>
+      <text x="80" y="428" class="pro-text">✅ 隐私性好</text>
+    </g>
+    
+    <!-- 适用人群 -->
+    <g id="home-target">
+      <rect x="70" y="440" width="460" height="60" rx="8" class="comparison-bg"/>
+      <text x="80" y="460" class="item-title">适用人群 Target Users</text>
+      <text x="80" y="475" class="item-text">• 刷酸新手和进阶用户</text>
+      <text x="80" y="488" class="item-text">• 轻中度肌肤问题</text>
+      <text x="280" y="475" class="item-text">• 预算有限的用户</text>
+      <text x="280" y="488" class="item-text">• 喜欢DIY护肤的人群</text>
+    </g>
+    
+    <!-- 优缺点总结 -->
+    <g id="home-summary">
+      <rect x="70" y="510" width="460" height="110" rx="8" fill="#E8F5E5" stroke="#7FB069" stroke-width="1"/>
+      <text x="80" y="530" class="item-title">优缺点总结</text>
+      <text x="80" y="545" class="pro-text">✅ 优点: 成本低、方便、安全、可长期使用</text>
+      <text x="80" y="558" class="con-text">❌ 缺点: 效果慢、需要学习、浓度有限</text>
+      <text x="80" y="580" class="item-title">推荐指数: ★★★★☆</text>
+      <text x="80" y="595" class="item-text">适合大部分想要改善肌肤的普通用户</text>
+      <text x="80" y="608" class="item-text">特别适合护肤预算有限但有耐心的人群</text>
+    </g>
+  </g>
+  
+  <!-- 右侧：医美级刷酸 -->
+  <g id="medical-section">
+    <rect x="650" y="80" width="500" height="550" rx="15" class="medical-grade"/>
+    <text x="900" y="110" text-anchor="middle" class="category-title">医美级刷酸 Medical Grade</text>
+    
+    <!-- 浓度对比 -->
+    <g id="medical-concentration">
+      <rect x="670" y="130" width="460" height="60" rx="8" class="comparison-bg"/>
+      <text x="680" y="150" class="item-title">浓度范围 Concentration</text>
+      <text x="680" y="165" class="item-text">• 果酸 (AHA): 20-70%</text>
+      <text x="680" y="178" class="item-text">• 三氯醋酸 (TCA): 10-35%</text>
+      <text x="880" y="165" class="item-text">• 复合酸配方</text>
+      <text x="880" y="178" class="item-text">• 定制化浓度</text>
+    </g>
+    
+    <!-- 效果速度 -->
+    <g id="medical-effect-speed">
+      <rect x="670" y="200" width="460" height="50" rx="8" class="comparison-bg"/>
+      <text x="680" y="220" class="item-title">效果速度 Effect Speed</text>
+      <text x="680" y="235" class="item-text">立竿见影，1-2次治疗即可看到明显改善</text>
+      <text x="680" y="248" class="item-text">深层焕肤，效果显著持久</text>
+    </g>
+    
+    <!-- 安全性 -->
+    <g id="medical-safety">
+      <rect x="670" y="260" width="460" height="50" rx="8" class="comparison-bg"/>
+      <text x="680" y="280" class="item-title">安全性 Safety</text>
+      <text x="680" y="295" class="pro-text">✅ 专业医生操作，安全可控</text>
+      <text x="680" y="308" class="con-text">❌ 高浓度，存在一定风险</text>
+      <text x="880" y="308" class="con-text">❌ 恢复期较长</text>
+    </g>
+    
+    <!-- 费用成本 -->
+    <g id="medical-cost">
+      <rect x="670" y="320" width="460" height="50" rx="8" class="comparison-bg"/>
+      <text x="680" y="340" class="item-title">费用成本 Cost</text>
+      <text x="680" y="355" class="item-text">单次费用: ¥800-5000 (根据项目和机构)</text>
+      <text x="680" y="368" class="item-text">年度成本: ¥3000-20000 (需要多次治疗)</text>
+    </g>
+    
+    <!-- 便利性 -->
+    <g id="medical-convenience">
+      <rect x="670" y="380" width="460" height="50" rx="8" class="comparison-bg"/>
+      <text x="680" y="400" class="item-title">便利性 Convenience</text>
+      <text x="680" y="415" class="con-text">❌ 需要预约，时间固定</text>
+      <text x="880" y="415" class="con-text">❌ 需要到院治疗</text>
+      <text x="680" y="428" class="con-text">❌ 有恢复期，影响日常</text>
+    </g>
+    
+    <!-- 适用人群 -->
+    <g id="medical-target">
+      <rect x="670" y="440" width="460" height="60" rx="8" class="comparison-bg"/>
+      <text x="680" y="460" class="item-title">适用人群 Target Users</text>
+      <text x="680" y="475" class="item-text">• 严重肌肤问题患者</text>
+      <text x="680" y="488" class="item-text">• 追求快速效果的用户</text>
+      <text x="880" y="475" class="item-text">• 预算充足的用户</text>
+      <text x="880" y="488" class="item-text">• 有专业指导需求</text>
+    </g>
+    
+    <!-- 优缺点总结 -->
+    <g id="medical-summary">
+      <rect x="670" y="510" width="460" height="110" rx="8" fill="#EBF3FD" stroke="#3498DB" stroke-width="1"/>
+      <text x="680" y="530" class="item-title">优缺点总结</text>
+      <text x="680" y="545" class="pro-text">✅ 优点: 效果快、浓度高、专业指导、针对性强</text>
+      <text x="680" y="558" class="con-text">❌ 缺点: 费用高、不便利、有风险、恢复期长</text>
+      <text x="680" y="580" class="item-title">推荐指数: ★★★☆☆</text>
+      <text x="680" y="595" class="item-text">适合严重问题或追求快速效果的用户</text>
+      <text x="680" y="608" class="item-text">需要充足预算和时间安排</text>
+    </g>
+  </g>
+  
+  <!-- 选择建议 -->
+  <g id="selection-guide">
+    <rect x="50" y="650" width="1100" height="40" rx="8" fill="#FFF3CD" stroke="#F39C12" stroke-width="2"/>
+    <text x="60" y="670" class="item-title" fill="#F39C12">💡 选择建议:</text>
+    <text x="150" y="670" class="item-text">新手或轻度问题→家用刷酸 | 严重问题或追求快速效果→医美级 | 预算有限→家用 | 时间充裕→可考虑医美</text>
+    <text x="60" y="685" class="item-text">⚠️ 无论选择哪种方式，都要重视安全性，建议先咨询专业人士意见</text>
+  </g>
+</svg>

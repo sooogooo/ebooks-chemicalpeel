@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200">
+  <defs>
+    <style>
+      .title-text { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #2C3E50; }
+      .section-title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #7FB069; }
+      .field-label { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #2C3E50; }
+      .field-text { font-family: Arial, sans-serif; font-size: 11px; fill: #7F8C8D; }
+      .input-line { stroke: #BDC3C7; stroke-width: 1; stroke-dasharray: 2,2; }
+      .section-bg { fill: #F8F9FA; stroke: #E8E8E8; stroke-width: 1; }
+      .header-bg { fill: #E8F5E5; stroke: #7FB069; stroke-width: 2; }
+      .checkbox { fill: none; stroke: #7F8C8D; stroke-width: 1; }
+      .rating-star { fill: #F39C12; stroke: #E67E22; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="1200" fill="#FEFEFE"/>
+  
+  <!-- 标题区域 -->
+  <rect x="50" y="30" width="700" height="80" rx="10" class="header-bg"/>
+  <text x="400" y="60" text-anchor="middle" class="title-text">刷酸日记模板</text>
+  <text x="400" y="80" text-anchor="middle" class="field-text">Acid Treatment Diary Template</text>
+  <text x="400" y="95" text-anchor="middle" class="field-text">记录你的刷酸之旅，科学追踪效果变化</text>
+  
+  <!-- 基本信息区域 -->
+  <g id="basic-info">
+    <rect x="50" y="130" width="700" height="120" rx="8" class="section-bg"/>
+    <text x="60" y="150" class="section-title">📋 基本信息 Basic Information</text>
+    
+    <text x="60" y="175" class="field-label">姓名 Name:</text>
+    <line x1="130" y1="175" x2="300" y2="175" class="input-line"/>
+    
+    <text x="320" y="175" class="field-label">年龄 Age:</text>
+    <line x1="370" y1="175" x2="450" y2="175" class="input-line"/>
+    
+    <text x="470" y="175" class="field-label">记录日期 Date:</text>
+    <line x1="550" y1="175" x2="700" y2="175" class="input-line"/>
+    
+    <text x="60" y="200" class="field-label">肌肤类型 Skin Type:</text>
+    <rect x="180" y="190" width="12" height="12" class="checkbox"/>
+    <text x="200" y="200" class="field-text">油性</text>
+    <rect x="240" y="190" width="12" height="12" class="checkbox"/>
+    <text x="260" y="200" class="field-text">干性</text>
+    <rect x="300" y="190" width="12" height="12" class="checkbox"/>
+    <text x="320" y="200" class="field-text">混合性</text>
+    <rect x="380" y="190" width="12" height="12" class="checkbox"/>
+    <text x="400" y="200" class="field-text">敏感性</text>
+    
+    <text x="60" y="225" class="field-label">主要问题 Main Concerns:</text>
+    <rect x="200" y="215" width="12" height="12" class="checkbox"/>
+    <text x="220" y="225" class="field-text">痘痘</text>
+    <rect x="260" y="215" width="12" height="12" class="checkbox"/>
+    <text x="280" y="225" class="field-text">毛孔</text>
+    <rect x="320" y="215" width="12" height="12" class="checkbox"/>
+    <text x="340" y="225" class="field-text">色斑</text>
+    <rect x="380" y="215" width="12" height="12" class="checkbox"/>
+    <text x="400" y="225" class="field-text">细纹</text>
+    <rect x="440" y="215" width="12" height="12" class="checkbox"/>
+    <text x="460" y="225" class="field-text">暗沉</text>
+  </g>
+  
+  <!-- 产品信息区域 -->
+  <g id="product-info">
+    <rect x="50" y="270" width="700" height="100" rx="8" class="section-bg"/>
+    <text x="60" y="290" class="section-title">🧴 使用产品 Product Information</text>
+    
+    <text x="60" y="315" class="field-label">产品名称 Product Name:</text>
+    <line x1="180" y1="315" x2="450" y2="315" class="input-line"/>
+    
+    <text x="470" y="315" class="field-label">品牌 Brand:</text>
+    <line x1="520" y1="315" x2="700" y2="315" class="input-line"/>
+    
+    <text x="60" y="340" class="field-label">酸类成分 Acid Type:</text>
+    <line x1="160" y1="340" x2="350" y2="340" class="input-line"/>
+    
+    <text x="370" y="340" class="field-label">浓度 Concentration:</text>
+    <line x1="480" y1="340" x2="580" y2="340" class="input-line"/>
+    
+    <text x="600" y="340" class="field-label">购买日期:</text>
+    <line x1="670" y1="340" x2="740" y2="340" class="input-line"/>
+    
+    <text x="60" y="365" class="field-label">使用频率 Frequency:</text>
+    <rect x="160" y="355" width="12" height="12" class="checkbox"/>
+    <text x="180" y="365" class="field-text">每日</text>
+    <rect x="220" y="355" width="12" height="12" class="checkbox"/>
+    <text x="240" y="365" class="field-text">隔天</text>
+    <rect x="280" y="355" width="12" height="12" class="checkbox"/>
+    <text x="300" y="365" class="field-text">每周2次</text>
+    <rect x="370" y="355" width="12" height="12" class="checkbox"/>
+    <text x="390" y="365" class="field-text">每周1次</text>
+  </g>
+  
+  <!-- 每日记录区域 -->
+  <g id="daily-record">
+    <rect x="50" y="390" width="700" height="200" rx="8" class="section-bg"/>
+    <text x="60" y="410" class="section-title">📅 每日记录 Daily Record</text>
+    
+    <text x="60" y="435" class="field-label">使用日期 Date:</text>
+    <line x1="140" y1="435" x2="250" y2="435" class="input-line"/>
+    
+    <text x="270" y="435" class="field-label">使用时间 Time:</text>
+    <rect x="350" y="425" width="12" height="12" class="checkbox"/>
+    <text x="370" y="435" class="field-text">晨间</text>
+    <rect x="420" y="425" width="12" height="12" class="checkbox"/>
+    <text x="440" y="435" class="field-text">晚间</text>
+    
+    <text x="60" y="460" class="field-label">使用部位 Application Area:</text>
+    <rect x="200" y="450" width="12" height="12" class="checkbox"/>
+    <text x="220" y="460" class="field-text">全脸</text>
+    <rect x="260" y="450" width="12" height="12" class="checkbox"/>
+    <text x="280" y="460" class="field-text">T区</text>
+    <rect x="320" y="450" width="12" height="12" class="checkbox"/>
+    <text x="340" y="460" class="field-text">局部</text>
+    
+    <text x="60" y="485" class="field-label">使用感受 Immediate Reaction:</text>
+    <rect x="60" y="495" width="680" height="40" fill="none" stroke="#BDC3C7" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="70" y="510" class="field-text">刺痛感: □无 □轻微 □中等 □强烈    发红程度: □无 □轻微 □明显 □严重</text>
+    <text x="70" y="525" class="field-text">其他反应: ________________________________</text>
+    
+    <text x="60" y="555" class="field-label">配套产品 Supporting Products:</text>
+    <line x1="60" y1="570" x2="740" y2="570" class="input-line"/>
+    <line x1="60" y1="585" x2="740" y2="585" class="input-line"/>
+  </g>
+  
+  <!-- 效果追踪区域 -->
+  <g id="effect-tracking">
+    <rect x="50" y="610" width="700" height="180" rx="8" class="section-bg"/>
+    <text x="60" y="630" class="section-title">📊 效果追踪 Effect Tracking</text>
+    
+    <text x="60" y="655" class="field-label">评估时间 Evaluation Period:</text>
+    <rect x="200" y="645" width="12" height="12" class="checkbox"/>
+    <text x="220" y="655" class="field-text">1周</text>
+    <rect x="260" y="645" width="12" height="12" class="checkbox"/>
+    <text x="280" y="655" class="field-text">2周</text>
+    <rect x="320" y="645" width="12" height="12" class="checkbox"/>
+    <text x="340" y="655" class="field-text">4周</text>
+    <rect x="380" y="645" width="12" height="12" class="checkbox"/>
+    <text x="400" y="655" class="field-text">8周</text>
+    <rect x="440" y="645" width="12" height="12" class="checkbox"/>
+    <text x="460" y="655" class="field-text">12周</text>
+    
+    <!-- 评分表格 -->
+    <text x="60" y="680" class="field-label">改善程度评分 (1-10分，10分为最佳):</text>
+    
+    <text x="60" y="705" class="field-text">痘痘数量:</text>
+    <g id="acne-rating">
+      <circle cx="140" cy="700" r="6" class="rating-star"/>
+      <text x="140" y="704" text-anchor="middle" class="field-text" font-size="8px">1</text>
+      <circle cx="160" cy="700" r="6" class="rating-star"/>
+      <text x="160" y="704" text-anchor="middle" class="field-text" font-size="8px">2</text>
+      <circle cx="180" cy="700" r="6" class="rating-star"/>
+      <text x="180" y="704" text-anchor="middle" class="field-text" font-size="8px">3</text>
+      <circle cx="200" cy="700" r="6" class="rating-star"/>
+      <text x="200" y="704" text-anchor="middle" class="field-text" font-size="8px">4</text>
+      <circle cx="220" cy="700" r="6" class="rating-star"/>
+      <text x="220" y="704" text-anchor="middle" class="field-text" font-size="8px">5</text>
+      <circle cx="240" cy="700" r="6" class="rating-star"/>
+      <text x="240" y="704" text-anchor="middle" class="field-text" font-size="8px">6</text>
+      <circle cx="260" cy="700" r="6" class="rating-star"/>
+      <text x="260" y="704" text-anchor="middle" class="field-text" font-size="8px">7</text>
+      <circle cx="280" cy="700" r="6" class="rating-star"/>
+      <text x="280" y="704" text-anchor="middle" class="field-text" font-size="8px">8</text>
+      <circle cx="300" cy="700" r="6" class="rating-star"/>
+      <text x="300" y="704" text-anchor="middle" class="field-text" font-size="8px">9</text>
+      <circle cx="320" cy="700" r="6" class="rating-star"/>
+      <text x="320" y="704" text-anchor="middle" class="field-text" font-size="8px">10</text>
+    </g>
+    
+    <text x="60" y="725" class="field-text">毛孔大小:</text>
+    <text x="140" y="725" class="field-text">1  2  3  4  5  6  7  8  9  10</text>
+    
+    <text x="60" y="745" class="field-text">肌肤质感:</text>
+    <text x="140" y="745" class="field-text">1  2  3  4  5  6  7  8  9  10</text>
+    
+    <text x="60" y="765" class="field-text">整体满意度:</text>
+    <text x="160" y="765" class="field-text">★☆☆☆☆  ★★☆☆☆  ★★★☆☆  ★★★★☆  ★★★★★</text>
+  </g>
+  
+  <!-- 副作用记录区域 -->
+  <g id="side-effects">
+    <rect x="50" y="810" width="700" height="120" rx="8" class="section-bg"/>
+    <text x="60" y="830" class="section-title">⚠️ 副作用记录 Side Effects Record</text>
+    
+    <text x="60" y="855" class="field-label">出现的副作用 Observed Side Effects:</text>
+    <rect x="60" y="865" width="12" height="12" class="checkbox"/>
+    <text x="80" y="875" class="field-text">轻微脱皮</text>
+    <rect x="150" y="865" width="12" height="12" class="checkbox"/>
+    <text x="170" y="875" class="field-text">发红刺痛</text>
+    <rect x="240" y="865" width="12" height="12" class="checkbox"/>
+    <text x="260" y="875" class="field-text">干燥紧绷</text>
+    <rect x="330" y="865" width="12" height="12" class="checkbox"/>
+    <text x="350" y="875" class="field-text">爆痘期</text>
+    <rect x="420" y="865" width="12" height="12" class="checkbox"/>
+    <text x="440" y="875" class="field-text">过敏反应</text>
+    
+    <text x="60" y="900" class="field-label">处理方法 Treatment:</text>
+    <line x1="60" y1="915" x2="740" y2="915" class="input-line"/>
+  </g>
+  
+  <!-- 调整记录区域 -->
+  <g id="adjustment-record">
+    <rect x="50" y="950" width="700" height="100" rx="8" class="section-bg"/>
+    <text x="60" y="970" class="section-title">🔄 调整记录 Adjustment Record</text>
+    
+    <text x="60" y="995" class="field-label">调整原因 Reason for Adjustment:</text>
+    <line x1="60" y1="1010" x2="740" y2="1010" class="input-line"/>
+    
+    <text x="60" y="1030" class="field-label">调整内容 Adjustment Details:</text>
+    <line x1="60" y1="1045" x2="740" y2="1045" class="input-line"/>
+  </g>
+  
+  <!-- 备注区域 -->
+  <g id="notes">
+    <rect x="50" y="1070" width="700" height="80" rx="8" class="section-bg"/>
+    <text x="60" y="1090" class="section-title">📝 备注 Notes</text>
+    
+    <rect x="60" y="1100" width="680" height="40" fill="none" stroke="#BDC3C7" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="70" y="1115" class="field-text">其他观察和心得:</text>
+    <line x1="70" y1="1125" x2="730" y2="1125" class="input-line"/>
+  </g>
+  
+  <!-- 底部提醒 -->
+  <rect x="50" y="1160" width="700" height="30" rx="5" fill="#FFF3CD" stroke="#F39C12" stroke-width="1"/>
+  <text x="60" y="1178" class="field-text" font-weight="bold" fill="#F39C12">💡 记录提醒: 坚持记录，客观评估，安全第一，效果第二！</text>
+</svg>

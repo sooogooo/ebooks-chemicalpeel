@@ -1,0 +1,208 @@
+site_name: 刷酸医美：输出好气色
+site_description: 从小白到专家的肌肤焕新指南 - 科学刷酸，安全变美，重塑肌肤新生态
+site_author: 护肤科普团队
+site_url: https://shuasuan.cqbcc.com
+
+# Repository
+repo_name: ChemicalPell/Guide
+repo_url: https://github.com/ChemicalPell/Guide
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2024 《刷酸医美：输出好气色》编写团队
+
+# Configuration
+theme:
+  name: material
+  language: zh
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  font:
+    text: Noto Sans SC
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.indexes  # 添加索引页面支持
+    - navigation.footer   # 添加页脚导航
+    - search.highlight
+    - search.share
+    - search.suggest      # 添加搜索建议
+    - toc.follow
+    - toc.integrate       # 集成目录到侧边栏
+    - content.code.copy
+    - content.code.annotate  # 代码注释功能
+    - content.action.edit
+    - content.action.view
+    - content.tabs.link   # 标签页链接
+
+# Plugins
+plugins:
+  - search:
+      lang: zh
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+  - git-revision-date-localized:  # 添加最后修改时间
+      enable_creation_date: true
+      type: datetime
+      locale: zh
+  - tags  # 添加标签支持
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      title: 目录
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: ChemicalPell
+      repo: Guide
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:  # 添加代码片段支持
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - 首页: index.md
+  - 前言:
+    - preface/index.md
+    - 前言: preface.md
+    - 序言: introduction.md
+  - 基础篇:
+    - chapters/basic/index.md
+    - 第1章 认识你的肌肤: chapters/01_know_your_skin.md
+    - 第2章 刷酸科学原理: chapters/02_acid_science.md
+    - 第3章 酸类成分大百科: chapters/03_acid_encyclopedia.md
+    - 第4章 刷酸前的准备工作: chapters/04_preparation.md
+  - 实践篇:
+    - chapters/practice/index.md
+    - 第5章 新手刷酸入门指南: chapters/05_beginner_guide.md
+    - 第6章 不同肌肤问题的刷酸方案: chapters/06_targeted_solutions.md
+    - 第7章 刷酸产品选择与搭配: chapters/07_product_selection.md
+    - 第8章 刷酸过程中的护理要点: chapters/08_care_during_process.md
+  - 进阶篇:
+    - chapters/advanced/index.md
+    - 第9章 医美级刷酸项目: chapters/09_medical_grade_peels.md
+    - 第10章 刷酸安全与风险防控: chapters/10_safety_risk_control.md
+    - 第11章 刷酸效果评估与调整: chapters/11_evaluation_adjustment.md
+  - 生活方式篇:
+    - chapters/lifestyle/index.md
+    - 第12章 刷酸期间的生活管理: chapters/12_lifestyle_management.md
+    - 第13章 刷酸与美妆的平衡: chapters/13_makeup_balance.md
+    - 第14章 刷酸社群与心得分享: chapters/14_community_sharing.md
+  - 附录:
+    - appendix/index.md
+    - 附录A 刷酸产品推荐清单: appendix/product_recommendations.md
+    - 附录B 刷酸常见问题FAQ: appendix/faq.md
+    - 附录C 刷酸日记模板: appendix/diary_template.md
+    - 附录D 专业术语解释: appendix/glossary.md
+  - 后记: epilogue.md
+  - 关于:
+    - about/index.md
+    - 图表索引: about/charts.md
+    - 参考资料: about/references.md
+    - 版权声明: about/copyright.md
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ChemicalPell
+      name: GitHub
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ChemicalPell
+      name: Twitter
+    - icon: fontawesome/solid/envelope
+      link: mailto:contact@chemical-peel-guide.com
+      name: 邮箱联系
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+    feedback:
+      title: 这个页面有帮助吗？
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: 有帮助
+          data: 1
+          note: >-
+            感谢您的反馈！
+        - icon: material/emoticon-sad-outline
+          name: 需要改进
+          data: 0
+          note: >-
+            感谢您的反馈！请通过GitHub Issues告诉我们如何改进。
+  version:
+    provider: mike
+    default: latest
+  tags:
+    基础知识: basic
+    实践指南: practice
+    进阶技巧: advanced
+    安全须知: safety
+
+# Custom CSS
+extra_css:
+  - stylesheets/extra.css
+
+# Custom JavaScript
+extra_javascript:
+  - javascripts/mathjax.js
+  - javascripts/extra.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Hooks (如果需要自定义处理)
+# hooks:
+#   - hooks/custom_hooks.py

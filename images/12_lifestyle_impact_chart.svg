@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600">
+  <defs>
+    <style>
+      .title-text { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #2C3E50; }
+      .category-title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #2C3E50; }
+      .factor-text { font-family: Arial, sans-serif; font-size: 12px; fill: #2C3E50; }
+      .positive-text { font-family: Arial, sans-serif; font-size: 11px; fill: #27AE60; }
+      .negative-text { font-family: Arial, sans-serif; font-size: 11px; fill: #E74C3C; }
+      .neutral-text { font-family: Arial, sans-serif; font-size: 11px; fill: #F39C12; }
+      .positive-bg { fill: #E8F5E5; stroke: #27AE60; stroke-width: 2; }
+      .negative-bg { fill: #F8D7DA; stroke: #E74C3C; stroke-width: 2; }
+      .neutral-bg { fill: #FFF3CD; stroke: #F39C12; stroke-width: 2; }
+      .center-circle { fill: #7FB069; stroke: #5A8A4A; stroke-width: 3; }
+    </style>
+    
+    <defs>
+      <marker id="positive-arrow" markerWidth="8" markerHeight="6" 
+              refX="7" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="#27AE60" />
+      </marker>
+      <marker id="negative-arrow" markerWidth="8" markerHeight="6" 
+              refX="7" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="#E74C3C" />
+      </marker>
+    </defs>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1000" height="600" fill="#FEFEFE"/>
+  
+  <!-- 标题 -->
+  <text x="500" y="30" text-anchor="middle" class="title-text">生活方式对刷酸效果的影响</text>
+  <text x="500" y="50" text-anchor="middle" class="factor-text">Lifestyle Impact on Acid Treatment Results</text>
+  
+  <!-- 中心圆：刷酸效果 -->
+  <g id="center-effect">
+    <circle cx="500" cy="300" r="80" class="center-circle"/>
+    <text x="500" y="290" text-anchor="middle" class="title-text" fill="white">刷酸效果</text>
+    <text x="500" y="310" text-anchor="middle" class="category-title" fill="white">Treatment</text>
+    <text x="500" y="325" text-anchor="middle" class="category-title" fill="white">Results</text>
+  </g>
+  
+  <!-- 饮食因素 -->
+  <g id="diet-factors">
+    <!-- 正面影响 -->
+    <rect x="50" y="80" width="200" height="120" rx="10" class="positive-bg"/>
+    <text x="150" y="105" text-anchor="middle" class="category-title">饮食 - 正面影响</text>
+    <text x="60" y="125" class="positive-text" font-weight="bold">✅ 有益食物:</text>
+    <text x="60" y="140" class="positive-text">• 富含维C的水果</text>
+    <text x="60" y="153" class="positive-text">• 深海鱼类(Omega-3)</text>
+    <text x="60" y="166" class="positive-text">• 绿叶蔬菜</text>
+    <text x="60" y="179" class="positive-text">• 充足水分(2L+/天)</text>
+    <text x="60" y="192" class="positive-text">• 优质蛋白质</text>
+    
+    <!-- 连接线 -->
+    <line x1="250" y1="140" x2="420" y2="260" stroke="#27AE60" stroke-width="2" marker-end="url(#positive-arrow)"/>
+    
+    <!-- 负面影响 -->
+    <rect x="50" y="220" width="200" height="120" rx="10" class="negative-bg"/>
+    <text x="150" y="245" text-anchor="middle" class="category-title">饮食 - 负面影响</text>
+    <text x="60" y="265" class="negative-text" font-weight="bold">❌ 不利食物:</text>
+    <text x="60" y="280" class="negative-text">• 高糖食物</text>
+    <text x="60" y="293" class="negative-text">• 油炸食品</text>
+    <text x="60" y="306" class="negative-text">• 乳制品(部分人群)</text>
+    <text x="60" y="319" class="negative-text">• 酒精</text>
+    <text x="60" y="332" class="negative-text">• 辛辣刺激食物</text>
+    
+    <!-- 连接线 -->
+    <line x1="250" y1="280" x2="420" y2="320" stroke="#E74C3C" stroke-width="2" marker-end="url(#negative-arrow)"/>
+  </g>
+  
+  <!-- 运动因素 -->
+  <g id="exercise-factors">
+    <!-- 正面影响 -->
+    <rect x="750" y="80" width="200" height="120" rx="10" class="positive-bg"/>
+    <text x="850" y="105" text-anchor="middle" class="category-title">运动 - 正面影响</text>
+    <text x="760" y="125" class="positive-text" font-weight="bold">✅ 适度运动:</text>
+    <text x="760" y="140" class="positive-text">• 促进血液循环</text>
+    <text x="760" y="153" class="positive-text">• 加速新陈代谢</text>
+    <text x="760" y="166" class="positive-text">• 排出毒素</text>
+    <text x="760" y="179" class="positive-text">• 减少压力</text>
+    <text x="760" y="192" class="positive-text">• 改善睡眠质量</text>
+    
+    <!-- 连接线 -->
+    <line x1="750" y1="140" x2="580" y2="260" stroke="#27AE60" stroke-width="2" marker-end="url(#positive-arrow)"/>
+    
+    <!-- 注意事项 -->
+    <rect x="750" y="220" width="200" height="120" rx="10" class="neutral-bg"/>
+    <text x="850" y="245" text-anchor="middle" class="category-title">运动 - 注意事项</text>
+    <text x="760" y="265" class="neutral-text" font-weight="bold">⚠️ 运动提醒:</text>
+    <text x="760" y="280" class="neutral-text">• 避免过度出汗</text>
+    <text x="760" y="293" class="neutral-text">• 及时清洁汗液</text>
+    <text x="760" y="306" class="neutral-text">• 选择透气衣物</text>
+    <text x="760" y="319" class="neutral-text">• 运动后温和清洁</text>
+    <text x="760" y="332" class="neutral-text">• 避免摩擦肌肤</text>
+  </g>
+  
+  <!-- 睡眠因素 -->
+  <g id="sleep-factors">
+    <!-- 正面影响 -->
+    <rect x="300" y="450" width="180" height="100" rx="10" class="positive-bg"/>
+    <text x="390" y="475" text-anchor="middle" class="category-title">睡眠 - 充足睡眠</text>
+    <text x="310" y="495" class="positive-text" font-weight="bold">✅ 7-9小时优质睡眠:</text>
+    <text x="310" y="510" class="positive-text">• 促进肌肤修复</text>
+    <text x="310" y="523" class="positive-text">• 平衡激素水平</text>
+    <text x="310" y="536" class="positive-text">• 增强免疫力</text>
+    
+    <!-- 连接线 -->
+    <line x1="390" y1="450" x2="460" y2="380" stroke="#27AE60" stroke-width="2" marker-end="url(#positive-arrow)"/>
+    
+    <!-- 负面影响 -->
+    <rect x="520" y="450" width="180" height="100" rx="10" class="negative-bg"/>
+    <text x="610" y="475" text-anchor="middle" class="category-title">睡眠 - 睡眠不足</text>
+    <text x="530" y="495" class="negative-text" font-weight="bold">❌ 睡眠不足影响:</text>
+    <text x="530" y="510" class="negative-text">• 延缓肌肤修复</text>
+    <text x="530" y="523" class="negative-text">• 增加炎症反应</text>
+    <text x="530" y="536" class="negative-text">• 降低治疗效果</text>
+    
+    <!-- 连接线 -->
+    <line x1="610" y1="450" x2="540" y2="380" stroke="#E74C3C" stroke-width="2" marker-end="url(#negative-arrow)"/>
+  </g>
+  
+  <!-- 压力因素 -->
+  <g id="stress-factors">
+    <!-- 负面影响 -->
+    <rect x="100" y="380" width="180" height="100" rx="10" class="negative-bg"/>
+    <text x="190" y="405" text-anchor="middle" class="category-title">压力 - 负面影响</text>
+    <text x="110" y="425" class="negative-text" font-weight="bold">❌ 高压力状态:</text>
+    <text x="110" y="440" class="negative-text">• 刺激皮脂分泌</text>
+    <text x="110" y="453" class="negative-text">• 加重炎症反应</text>
+    <text x="110" y="466" class="negative-text">• 影响肌肤屏障</text>
+    
+    <!-- 连接线 -->
+    <line x1="280" y1="420" x2="420" y2="340" stroke="#E74C3C" stroke-width="2" marker-end="url(#negative-arrow)"/>
+  </g>
+  
+  <!-- 环境因素 -->
+  <g id="environment-factors">
+    <!-- 注意事项 -->
+    <rect x="720" y="380" width="180" height="100" rx="10" class="neutral-bg"/>
+    <text x="810" y="405" text-anchor="middle" class="category-title">环境 - 注意事项</text>
+    <text x="730" y="425" class="neutral-text" font-weight="bold">⚠️ 环境因素:</text>
+    <text x="730" y="440" class="neutral-text">• 避免强紫外线</text>
+    <text x="730" y="453" class="neutral-text">• 注意空气污染</text>
+    <text x="730" y="466" class="neutral-text">• 保持室内湿度</text>
+  </g>
+  
+  <!-- 影响程度指示 -->
+  <g id="impact-legend">
+    <rect x="350" y="80" width="300" height="80" rx="8" fill="#F8F9FA" stroke="#E8E8E8" stroke-width="1"/>
+    <text x="500" y="105" text-anchor="middle" class="category-title">影响程度说明</text>
+    
+    <circle cx="370" cy="125" r="8" fill="#27AE60"/>
+    <text x="385" y="130" class="factor-text">正面影响：促进效果，加速恢复</text>
+    
+    <circle cx="370" cy="145" r="8" fill="#E74C3C"/>
+    <text x="385" y="150" class="factor-text">负面影响：阻碍效果，增加风险</text>
+  </g>
+  
+  <!-- 综合建议 -->
+  <rect x="50" y="570" width="900" height="25" rx="5" fill="#E8F5E5" stroke="#7FB069" stroke-width="1"/>
+  <text x="60" y="585" class="factor-text" font-weight="bold">💡 综合建议:</text>
+  <text x="140" y="585" class="factor-text">均衡饮食 + 适度运动 + 充足睡眠 + 压力管理 + 环境防护 = 最佳刷酸效果</text>
+</svg>
