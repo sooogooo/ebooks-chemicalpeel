@@ -155,7 +155,9 @@ async def chat(request: ChatRequest):
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"服务器错误: {str(e)}")
+        # 记录详细错误到日志，但不暴露给用户
+        print(f"[ERROR] Chat API error: {type(e).__name__}: {str(e)}")
+        raise HTTPException(status_code=500, detail="服务器内部错误，请稍后重试")
 
 
 @app.post("/api/test-connection")
@@ -177,9 +179,11 @@ async def test_connection(request: ChatRequest):
         }
         
     except Exception as e:
+        # 记录详细错误到日志，但不暴露给用户
+        print(f"[ERROR] Connection test error: {type(e).__name__}: {str(e)}")
         raise HTTPException(
             status_code=500,
-            detail=f"连接测试失败: {str(e)}"
+            detail="连接测试失败，请检查API密钥和网络连接"
         )
 
 

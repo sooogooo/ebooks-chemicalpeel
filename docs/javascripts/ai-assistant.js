@@ -680,7 +680,7 @@
         messageDiv.id = messageId;
         
         if (role === 'loading') {
-            messageDiv.innerHTML = '<div class="message-content loading-dots">' + content + '</div>';
+            messageDiv.innerHTML = '<div class="message-content loading-dots">' + escapeHtml(content) + '</div>';
         } else {
             var icon = role === 'user' ? '👤' : (role === 'assistant' ? '🤖' : 'ℹ️');
             messageDiv.innerHTML = '<div class="message-icon">' + icon + '</div>' +
