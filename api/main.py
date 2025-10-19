@@ -8,7 +8,7 @@ from typing import Dict, List, Any
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 from config import settings, MODEL_CONFIGS
 from adapters import (
@@ -43,7 +43,7 @@ request_tracker: Dict[str, List[float]] = {}
 # 请求模型
 class ChatRequest(BaseModel):
     """聊天请求模型"""
-    model_config = {"protected_namespaces": ()}
+    model_config = ConfigDict(protected_namespaces=())
     
     model_type: str  # qwen, ernie, glm, spark, kimi, doubao
     api_key: str
