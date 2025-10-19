@@ -33,6 +33,9 @@
 - pip
 
 ### 快速启动
+
+#### 1. 启动电子书服务
+
 ```bash
 # 克隆项目
 git clone https://github.com/sooogooo/ebooks-chemicalpeel.git
@@ -49,10 +52,59 @@ mkdocs serve
 
 访问 http://127.0.0.1:8000 查看电子书
 
+#### 2. 启动AI助手API服务（可选）
+
+如果您想使用后端API代理服务：
+
+```bash
+# 进入API目录
+cd api
+
+# 安装API依赖
+pip install -r requirements.txt
+
+# 配置环境变量（可选）
+cp .env.example .env
+# 编辑 .env 文件，填入您的API密钥
+
+# 启动API服务
+python main.py
+```
+
+API服务将在 http://localhost:8001 启动
+
+**注意**：
+- 后端API服务不是必需的，前端可以直接调用大模型API
+- 后端服务主要用于统一管理API密钥和添加额外功能
+- 个人使用推荐直接在前端配置API密钥
+
 ### 构建静态文件
 ```bash
 mkdocs build
 ```
+
+### 配置AI助手
+
+1. **获取API密钥**：
+   - 通义千问：https://dashscope.aliyun.com/
+   - 文心一言：https://cloud.baidu.com/product/wenxinworkshop
+   - 智谱GLM：https://open.bigmodel.cn/
+   - 讯飞星火：https://xinghuo.xfyun.cn/
+   - Kimi：https://platform.moonshot.cn/
+   - 豆包：https://www.volcengine.com/product/doubao
+
+2. **在电子书中配置**：
+   - 点击页面右下角的AI助手按钮（🤖）
+   - 点击配置按钮（⚙️）
+   - 选择模型并输入API密钥
+   - 测试连接并保存配置
+
+3. **开始使用**：
+   - 在输入框中提问
+   - 选中文本使用快捷功能
+   - 使用预设快捷按钮
+
+详细使用指南请查看：[AI助手使用指南](https://sooogooo.github.io/ebooks-chemicalpeel/appendix/ai_assistant_guide/)
 
 ## 📁 项目结构
 
@@ -85,6 +137,15 @@ ebooks-chemicalpeel/
 - **部署**: GitHub Pages
 
 ## 📱 功能特性
+
+### 🤖 AI智能助手（新功能）
+- 支持6个中国主流大模型（通义千问、文心一言、智谱GLM、讯飞星火、Kimi、豆包）
+- 智能问答：解答刷酸护肤相关问题
+- 知识库增强（RAG）：基于书籍内容提供精准答案
+- 文本选择快捷操作：选中文本即可解释、分析、拓展
+- 流式响应：打字机效果，实时显示AI回答
+- 对话历史管理：保存和回顾历史对话
+- 完整配置界面：灵活调整模型参数
 
 ### 响应式设计
 - 支持桌面端、平板、手机
