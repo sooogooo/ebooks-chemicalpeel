@@ -141,7 +141,9 @@ async def chat(request: ChatRequest):
                         yield f"data: {chunk}\n\n"
                     yield "data: [DONE]\n\n"
                 except Exception as e:
-                    yield f"data: [ERROR: {str(e)}]\n\n"
+                    # 记录详细错误但不暴露给用户
+                    print(f"[ERROR] Stream chat error: {type(e).__name__}: {str(e)}")
+                    yield "data: [ERROR: 生成回复时发生错误]\n\n"
             
             return StreamingResponse(
                 generate(),
