@@ -106,6 +106,7 @@ nav:
     - 附录B 刷酸常见问题FAQ: appendix/faq.md
     - 附录C 刷酸日记模板: appendix/diary_template.md
     - 附录D 专业术语解释: appendix/glossary.md
+    - 附录E AI助手使用指南: appendix/ai_assistant_guide.md
   - 后记: epilogue.md
   - 关于:
     - 图表索引: about/charts.md
@@ -114,8 +115,13 @@ nav:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/ai-assistant.css
 
 extra_javascript:
   - javascripts/mathjax.js
   - javascripts/reading-progress.js
   - javascripts/image-zoom.js
+  - javascripts/ai-knowledge.js
+  - javascripts/ai-config.js
+  - javascripts/ai-shortcuts.js
+  - javascripts/ai-assistant.js
