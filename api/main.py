@@ -43,6 +43,8 @@ request_tracker: Dict[str, List[float]] = {}
 # 请求模型
 class ChatRequest(BaseModel):
     """聊天请求模型"""
+    model_config = {"protected_namespaces": ()}
+    
     model_type: str  # qwen, ernie, glm, spark, kimi, doubao
     api_key: str
     messages: List[Dict[str, str]]

@@ -40,3 +40,7 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# API Environment files
+api/.env
+.env
